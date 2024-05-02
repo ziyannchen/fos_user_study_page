@@ -1,0 +1,45 @@
+{
+  "name": "fos_user_study_page",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://username.github.io/projects/fos_user_study_page",
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.29.1",
+    "antd": "^4.17.4",
+    "eslint": "^9.1.1",
+    "file-saver": "^2.0.5",
+    "gh-pages": "^6.1.1",
+    "react": "^17.0.2",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "react-player": "^2.11.2",
+    "umi": "^3.5.20",
+    "video-react": "^0.16.0"
+  },
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d dist",
+    "test": "umi dev --no-mfsu"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.5",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/plugin-sass": "^1.1.1",
+    "@umijs/preset-react": "1.x",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "sass-resources-loader": "^2.2.4",
+    "typescript": "^4.1.2"
+  }
+}

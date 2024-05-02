@@ -1,0 +1,12 @@
+@import "builds";
+@include build-colors("primary", $primary-color);
+@include build-colors("success", $success-color);
+@include build-colors("warning", $warning-color);
+@include build-colors("error", $error-color);
+@include build-colors("heading", $heading-color);
+@include build-colors("text", $text-color);
+@include build-colors("secondary", $text-color-secondary);
+@include build-colors("disabled", $disabled-color);
+@include build-colors("dark", $disabled-color);
+@include build-colors("block", $black-color);
+@include build-colors("white", $white-color);

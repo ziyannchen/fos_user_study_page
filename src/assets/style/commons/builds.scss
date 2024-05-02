@@ -1,0 +1,66 @@
+// 构建颜色辅助类
+@mixin build-colors($name, $color) {
+  // 生成颜色类 color-primary ...
+  .color-#{$name} {
+    color: $color !important;
+  }
+  // 生成背景颜色类
+  .bgc-#{$name} {
+    background-color: $color !important;
+  }
+  // 生成边框颜色类 .bdc-primary ...
+  .bdc-#{$name} {
+    border-color: $color !important;
+  }
+}
+// 生成字体大小类 .fz-14 ...
+@mixin build-font-sizes($begin, $end) {
+  @for $i from $begin through $end {
+    .font-#{$i} {
+      font-size: #{$i}px !important;
+    }
+    .fz-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+}
+
+@mixin build-spaces($space) {
+  .mt-#{$space} {
+    margin-top: #{$space}px;
+  }
+  .pt-#{$space} {
+    padding-top: #{$space}px;
+  }
+  .mb-#{$space} {
+    margin-bottom: #{$space}px;
+  }
+  .pb-#{$space} {
+    padding-bottom: #{$space}px;
+  }
+  .ml-#{$space} {
+    margin-left: #{$space}px;
+  }
+  .pl-#{$space} {
+    padding-left: #{$space}px;
+  }
+  .mr-#{$space} {
+    margin-right: #{$space}px;
+  }
+  .pr-#{$space} {
+    padding-right: #{$space}px;
+  }
+  .margin-#{$space} {
+    margin: #{$space}px;
+  }
+  .padding-#{$space} {
+    padding: #{$space}px;
+  }
+}
+// 批量生成
+@mixin batch-build-spaces($count) {
+  @for $i from 1 through $count {
+    @include build-spaces($i * 4);
+    @include build-spaces($i * 5);
+  }
+}

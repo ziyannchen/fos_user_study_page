@@ -1,0 +1,29 @@
+@import 'assets/style/commons/index';
+
+html,
+body,
+#root {
+  min-width: 1050px;
+  height: 100%;
+  font-family: HelveticaNeue, Helvetica, Arial,
+    “PingFangSC”，“Hei tiSC”，“Hir agino Sans GB”，“Mi crosoft YaHei”，“ sans- serif”;
+}
+
+.ant-layout {
+  min-height: 100vh;
+  background: #fff !important;
+}
+
+.c-active {
+  opacity: 0.5;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}

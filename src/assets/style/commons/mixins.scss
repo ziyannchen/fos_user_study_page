@@ -1,0 +1,40 @@
+// 清除浮动
+@mixin clear-fix
+{
+  &:before,
+  &:after
+  {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+// 单行文字自动省略
+@mixin text-ellipsis
+{
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin native-scroll
+{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// 圆形
+@mixin display-circle($width)
+{
+  display: block;
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+}
+@mixin text-jb {
+  background-image: $text-linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
