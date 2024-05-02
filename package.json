@@ -2,7 +2,7 @@
   "name": "fos_user_study_page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://username.github.io/projects/fos_user_study_page",
+  "homepage": "https://username.github.io/fos_user_study_page",
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
@@ -28,7 +28,7 @@
     "start": "umi dev",
     "build": "umi build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d dist",
+    "deploy": "gh-pages -d dist",
     "test": "umi dev --no-mfsu"
   },
   "devDependencies": {

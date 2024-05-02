@@ -5,6 +5,7 @@ const path = require('path');
 export default defineConfig({
     title: 'FOS User Study',
     favicon: '/favicon.svg',
+    history: { type: 'hash' },
     hash: true,
     antd: {},
     theme: {
@@ -30,11 +31,11 @@ export default defineConfig({
     },
     define: {
       env: process.env.NODE_ENV,
-      publicPath: process.env['PUBLIC_PATH'] || '/',
+      publicPath: process.env['PUBLIC_PATH'] || './',
     },
-    publicPath: process.env['PUBLIC_PATH'] || '/',
+    publicPath: process.env['PUBLIC_PATH'] || './',
     headScripts: [
-      {src: `${process.env['PUBLIC_PATH'] || '/'}d3.min.js`, defer: true}
+      {src: `${process.env['PUBLIC_PATH'] || './'}d3.min.js`, defer: true}
     ],
     // chunks: ['vendors', 'umi'],
     chainWebpack: (config: any) => {
