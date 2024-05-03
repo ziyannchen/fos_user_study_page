@@ -47,7 +47,7 @@ const FosBoard: React.FC<IProps> = ({ user }) => {
             </div>
             <div className='center text-main'>
               Please refer this&nbsp;
-              <p className="c-r" onClick={() => {}}><span className={'light'}><b>Tutorial</b></span></p>
+              <p className="c-r" onClick={() => history.push('/tutorial')}><span className={'light'}><b>Tutorial</b></span></p>
               &nbsp;to learn the evaluation rules.
             </div>
             <div className='center text-main'>

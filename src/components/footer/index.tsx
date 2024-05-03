@@ -42,6 +42,15 @@ const Footer: React.FC<IProps> = ({ Logo }) => {
         </div>
         <div className="footer-right">
           <div className="footer-right-item">
+            <div  className="footer-right-item-texts">
+              <div className="footer-right-item-title">Project</div>
+              <p className="c-r" onClick={() => { goToUrl('https://github.com/ziyannchen/fos_user_study_page') }}>
+                  <img src={github} alt="" width={20}/>
+                Source Code
+              </p>
+            </div>
+          </div>
+          <div className="footer-right-item">
             {/* <div className="footer-right-item-title">Legal Agreement</div> */}
             {/* <div className="footer-right-item-texts">
               <p className="c-r" onClick={() => { history.push('/serviceagreement') }}>Service Agreement</p>
@@ -49,7 +58,7 @@ const Footer: React.FC<IProps> = ({ Logo }) => {
               <p className="c-r" onClick={() => { history.push('/termsofuse') }}>Terms of Use</p>
               <p className="c-r" onClick={() => { history.push('/termsofapplication') }}> Terms of Application</p>
             </div> */}
-            <div className="footer-right-item-title">Project</div>
+            <div className="footer-right-item-title">Benchmark</div>
             <div className="footer-right-item-texts">
             <p className="c-r" onClick={() => { goToUrl('https://ziyannchen.github.io/projects/VFRxBenchmark/') }}>
                   <img src={webpage} alt="" width={20}/>
