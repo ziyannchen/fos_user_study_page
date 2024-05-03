@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Player } from 'video-react';
 import { Image, Button, Rate, Space, Modal } from 'antd';
 
-import { WidthI, WidthV } from '../js/Reader';
-import type { ImageType } from '../js/Reader';
+import { WidthI, WidthV } from '../js/Constant';
+import type { ImageType } from '../js/Constant';
 import ReactPlayer from 'react-player';
 
 interface IProps {

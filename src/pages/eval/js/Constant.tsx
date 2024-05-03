@@ -4,7 +4,7 @@ import { useState } from 'react';
 const PageSize = 1;
 const WidthI = 240;
 const WidthV = 220;
-const src_prefix = 'https://pjlab-gvm-data.oss-cn-shanghai.aliyuncs.com/data/';
+const server_src = 'https://pjlab-gvm-data.oss-cn-shanghai.aliyuncs.com/data/';
 
 const imgaeCriterions = [
   {
@@ -79,31 +79,31 @@ const imageDemo: ImageType[] = [
     score1: '-1',
     score2: '-1',
     // url: 'https://i.ibb.co/NK0h51s/lq.png',
-    url: src_prefix + 'fos_aligned/lq/1_0018_00_0000.png',
+    url: server_src + 'fos_aligned/lq/1_0018_00_0000.png',
   },
   {
     id: '1',
     score1: '5',
     score2: '3',
-    url: src_prefix + 'fos_aligned/codeformer/1_0018_00_0000.png',
+    url: server_src + 'fos_aligned/codeformer/1_0018_00_0000.png',
   },
   {
     id: '2',
     score1: '3',
     score2: '3',
-    url: src_prefix + 'fos_aligned/gfpgan/1_0018_00_0000.png',
+    url: server_src + 'fos_aligned/gfpgan/1_0018_00_0000.png',
   },
   {
     id: '3',
     score1: '2',
     score2: '3',
-    url: src_prefix + 'fos_aligned/vqfr/1_0018_00_0000.png',
+    url: server_src + 'fos_aligned/vqfr/1_0018_00_0000.png',
   },
   {
     id: '4',
     score1: '3',
     score2: '5',
-    url: src_prefix + 'fos_aligned/restoreformer/1_0018_00_0000.png',
+    url: server_src + 'fos_aligned/restoreformer/1_0018_00_0000.png',
   },
 ];
 
@@ -112,37 +112,37 @@ const videoDemo: ImageType[] = [
     id: '0',
     score1: '-1',
     score2: '-1',
-    url: src_prefix + 'ytvf_h264/lq/1_0234_02.mp4',
+    url: server_src + 'ytvf_h264/lq/1_0234_02.mp4',
   },
   {
     id: '1',
     score1: '2',
     score2: '2',
-    url: src_prefix + 'ytvf_h264/restoreformer/1_0234_02.mp4',
+    url: server_src + 'ytvf_h264/restoreformer/1_0234_02.mp4',
   },
   {
     id: '2',
     score1: '3',
     score2: '3',
-    url: src_prefix + 'ytvf_h264/gfpgan/1_0234_02.mp4',
+    url: server_src + 'ytvf_h264/gfpgan/1_0234_02.mp4',
   },
   {
     id: '3',
     score1: '4',
     score2: '2',
-    url: src_prefix + 'ytvf_h264/vqfr/1_0234_02.mp4',
+    url: server_src + 'ytvf_h264/vqfr/1_0234_02.mp4',
   },
   {
     id: '4',
     score1: '4',
     score2: '4',
-    url: src_prefix + 'ytvf_h264/codeformer/1_0234_02.mp4',
+    url: server_src + 'ytvf_h264/codeformer/1_0234_02.mp4',
   },
   {
     id: '5',
     score1: '2',
     score2: '5',
-    url: src_prefix + 'ytvf_h264/basicvsr/1_0234_02.mp4',
+    url: server_src + 'ytvf_h264/basicvsr/1_0234_02.mp4',
   },
 ];
 

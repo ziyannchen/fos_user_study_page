@@ -1,10 +1,10 @@
 import React from 'react';
 
 import FosImage from './FosImage';
-import { WidthI, WidthV } from '../js/Reader';
+import { WidthI, WidthV } from '../js/Constant';
 
 import EmptyImage from '@/assets/images/xpixel/placeholder.png';
-import type { ImageType } from '@/pages/eval/js/Reader';
+import type { ImageType } from '@/pages/eval/js/Constant';
 
 import '@/pages/index.scss';
 

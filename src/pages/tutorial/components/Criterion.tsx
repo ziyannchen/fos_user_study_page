@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Space, Button, Rate } from 'antd';
 import ImageGroup from '@/pages/eval/components/ImageGroup';
-import { imageDemo, videoDemo, rateDesc, cookieMap, imgaeCriterions, videoCriterions } from '@/pages/eval/js/Reader';
+import { imageDemo, videoDemo, rateDesc, cookieMap, imgaeCriterions, videoCriterions } from '@/pages/eval/js/Constant';
 
 import '@/pages/index.scss';
 

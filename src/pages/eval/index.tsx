@@ -6,9 +6,9 @@ import { useCookies } from 'react-cookie';
 import { Modal, Result, Button, Row, Col, message, Progress, Pagination, notification } from 'antd';
 
 import { persistentStorage, clearAll } from './js/State';
-import type { ImageType, ImageGroupType } from '@/pages/eval/js/Reader';
+import type { ImageType, ImageGroupType } from '@/pages/eval/js/Constant';
 import { saveFileLocal } from './js/Local';
-import {cookieMap, PageSize} from '@/pages/eval/js/Reader';
+import {cookieMap, PageSize} from '@/pages/eval/js/Constant';
 import ImageGroup from '@/pages/eval/components/ImageGroup';
 import initialState from '@@/plugin-initial-state/models/initialState';
 
