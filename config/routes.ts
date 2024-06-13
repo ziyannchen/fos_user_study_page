@@ -1,17 +1,6 @@
-import { Component } from "react";
+// import { Component } from "react";
 
 export default [
-    // {
-    //   path: '/',
-    //   component: '@/layouts',
-    //   routes: [
-    //     { path: '/', redirect: '/login'},
-    //     {
-    //       path: '/login', Name: 'Login',
-    //       component: '@/pages/home/components/Login',
-    //     },
-    //   ]
-    // },
     {
       path: '/',
       component: '@/layouts',

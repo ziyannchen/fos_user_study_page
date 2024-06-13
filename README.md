@@ -2,15 +2,21 @@
 <div align="center">
 
 <!-- 📜 [Paper]() |  -->
+🚀 [Playground](https://ziyannchen.github.io/fos_user_study_page) |
 📃 [ArXiv](http://arxiv.org/abs/2404.19500) | 🏰 [HomePage](https://ziyannchen.github.io/projects/VFRxBenchmark/)
-| 🚀 [Playground](https://ziyannchen.github.io/fos_user_study_page)
 </div>
 
-This user study page is used in [Towards Real-world Video Face Restoration: A New Benchmark](https://ziyannchen.github.io/projects/VFRxBenchmark/) to support relatively large-scale user studies.
+This is the source code of the user study page used in [Towards Real-world Video Face Restoration: A New Benchmark](https://ziyannchen.github.io/projects/VFRxBenchmark/) which supports relatively large-scale user studies. 
+
+Compiled and hosted webpage is in the 🚀 [Playground](https://ziyannchen.github.io/fos_user_study_page). Use the user id `test` to login.
 
 ### Features
 - Server-end data loading
-- User-friendly interface
+- User login verification
+- Automatic cookie caching (for login states and rating records)
+
+## What's new
+- 2024/05/02 - this repo is released.
 
 ## 🚀 Getting Started
 

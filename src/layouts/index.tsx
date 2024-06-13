@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import { useFavicon } from 'ahooks';
 import { Link, history } from 'umi';
 import ProLayout, { BasicLayoutProps } from '@ant-design/pro-layout';
+import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 // import User from './components/User';
 import Footer from '@/components/footer';
 import './index.scss';
@@ -19,10 +20,12 @@ const Layout: React.FC = (props: BasicLayoutProps) => {
   const { route } = props;
   const platform = 'gvLab';
   const routes = route?.routes?.filter((item) => item.path);
+  // use useLocation to avoid location?.pathname is always / in hash router
+  let location = useLocation();
   let [currentPathName, setCurrentPathName] = useState(location?.pathname);
   let [showBg, setShowBg] = useState(false);
-  // const [favicon, setFavicon] = useState(gvFavicon);
 
+  // const [favicon, setFavicon] = useState(gvFavicon);
   // useFavicon(favicon);
 
   useEffect(() => {
@@ -59,14 +62,14 @@ const Layout: React.FC = (props: BasicLayoutProps) => {
       disableContentMargin
       contentStyle={contentStyle}
       location={{
-        pathname: location?.pathname === '/' ? '/home' : location?.pathname,
+        pathname: (location?.pathname === '/' || location?.pathname === 'login') ? '/home' : location?.pathname,
       }}
       route={{
         ...props.route,
         // fixme 部署多项目的时候 有个base BOM对象 location 会和 routes 不一致 导致有些参数匹配不上(renderHeader  footerRender 等)
         routes,
       }}
-      onMenuHeaderClick={() => history.push('/')}
+      onMenuHeaderClick={(p) => {console.log(p), history.push('/')}}
       menuItemRender={(p) => {
         if (p.url) {
           return (

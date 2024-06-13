@@ -48,7 +48,7 @@ const FosLogin: React.FC<IProps> = () => {
   };
 
   return (
-    <div className="fos pad">
+    <div className="fos pad pad-bottom">
       {contextHolder}
       <div className="banner pad center">
         <span className="light">FOS</span>&nbsp; Face In the Wild.
@@ -73,6 +73,7 @@ const FosLogin: React.FC<IProps> = () => {
             }}
           />
         </div>
+        <div className='center' style={{color: '#dadada'}}>Use the user id `test` to login.</div>
         <div className="text-sub">
           <div className='center pad-sub pad-top'>
           FOS face is a benchmark test dataset with faces in the wild for blind face restoration.

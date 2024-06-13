@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Result } from 'antd';
 import { history } from 'umi';
 
@@ -8,6 +9,8 @@ import { RateCriterion, ImageRateCriterion, VideoRateCriterion } from './compone
 import UserClaim from './components/Claim';
 
 const Tutorial: React.FC = () => {
+    // let [currentPathName, setCurrentPathName] = useState(location?.pathname);
+    
     return (
         <div className='fos pad'>
           <div className="light banner center ele pad-top">

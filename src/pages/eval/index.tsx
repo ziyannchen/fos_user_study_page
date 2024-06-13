@@ -29,10 +29,10 @@ const EvalBoard: React.FC<IProps> = ({test = true}) => {
     'TestState',
     'FosLogin'
   ]);
-  console.log('login',cookie.FosLogin? 'true': 'false');
+  // console.log('login',cookie.FosLogin? 'true': 'false');
   // clearAll();
   const [finished, setFinished] = useState(false);
-  console.log(cookie.TestState, cookieMap.video);
+  // console.log(cookie.TestState, cookieMap.video);
 
   let state = null;
   let data = null;
@@ -163,7 +163,7 @@ const EvalBoard: React.FC<IProps> = ({test = true}) => {
   }, [navigate]);
 
   return (
-    console.log('login',cookie.FosLogin? 'true': 'false'),
+    // console.log('login',cookie.FosLogin? 'true': 'false'),
     cookie.FosLogin ? 
     <div className="fos">
       {finished ? (
